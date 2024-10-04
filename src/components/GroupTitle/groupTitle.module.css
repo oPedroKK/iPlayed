@@ -1,0 +1,44 @@
+.groupContainer {
+    border-block: 5px solid #df65eb;
+    overflow: hidden;
+    height: 0 auto;
+}
+
+.groupTitle {
+    position: relative;
+    height: 150px;
+}
+
+.groupTitle h1 {
+    display: flex;
+    position: absolute;
+
+    width: 1200px;
+    height: 500px;
+
+    padding: 40px;
+    padding-top: 28px;
+
+    background: linear-gradient(to right, #ffffff, #00000000);
+    
+    color: #000000;
+
+    font-weight: 200;
+    font-size: 50px;
+
+    font-style: italic;
+
+    top: 0%;
+    left: 0px;
+}
+
+.groupTitle img {
+    display: block;
+
+    filter: blur(5px);
+
+    width: 100%;
+    height: 900px;
+
+    object-position: 0 -390px;
+}

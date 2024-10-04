@@ -1,0 +1,9 @@
+.gameListDisplay {
+    display: flex;
+    user-select: none;
+
+    overflow-x: scroll;
+
+    padding: 20px;
+    gap: 60px;
+}

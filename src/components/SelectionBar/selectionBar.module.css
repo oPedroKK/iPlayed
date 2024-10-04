@@ -1,0 +1,54 @@
+.subbar {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ffffff;
+    border-bottom: solid 4px #df65eb;
+    height: 320px;
+}
+
+.subbar h2 {
+    font-size: 30px;
+    font-weight: 200;
+    color: #000000;
+
+    margin-bottom: 10px;
+}
+
+.subbar nav {
+    display: flex;
+    text-align: center;
+}
+
+.subbar a {
+    cursor: pointer;
+    margin: 10px;
+
+    text-decoration: none;
+    transition: all 400ms;
+}
+
+.subbar a:hover {
+    transform: scale(1.08);
+
+    color: #32c5ff;
+    transition: all 400ms;
+}
+
+.subbar p {
+    margin-top: -5px;
+    color: #000000;
+}
+
+.subbar img {
+    background-color: #32c5ff;
+    border: #32c5ff 4px solid;
+
+    border-radius: 100%;
+
+    width: 100px;
+    height: 100px;
+}

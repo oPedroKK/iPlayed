@@ -1,0 +1,99 @@
+[
+    {
+        "name": "Dark Souls Remastered",
+        "cover": "https://m.media-amazon.com/images/I/71xY1CYZmfL._AC_UF1000,1000_QL80_.jpg",
+        "category": "RPG",
+        "plataform": "PS4"
+    },
+
+    {
+        "name": "The Last of Us",
+        "cover": "https://cdn.awsli.com.br/2614/2614028/produto/250039053/the-last-of-us-remastered-us_a3-qfd7j5v8jc.jpg",
+        "category": "Zombie",
+        "plataform": "PS4"
+    },
+
+    {
+        "name": "Fallout: New Vegas",
+        "cover": "https://m.media-amazon.com/images/I/71LC9UZyhlL._AC_UF894,1000_QL80_.jpg",
+        "category": "RPG",
+        "plataform": "PC"
+    },
+
+    {
+        "name": "Fallout 4",
+        "cover": "https://cdn.mobygames.com/covers/1075652-fallout-4-playstation-4-front-cover.jpg",
+        "category": "RPG",
+        "plataform": "PS4"
+    },
+
+    {
+        "name": "Project Zomboid",
+        "cover": "https://upload.wikimedia.org/wikipedia/pt/1/17/Project_Zomboid_PC_capa_digital.jpg",
+        "category": "Zombie",
+        "plataform": "PC"
+    },
+
+    {
+        "name": "Uncharted 4",
+        "cover": "https://www.gamespot.com/a/uploads/scale_super/43/434805/2876987-uncharted4amazon.jpg",
+        "category": "Adv",
+        "plataform": "PS4"
+    },
+
+    {
+        "name": "Stardew Valley",
+        "cover": "https://sm.ign.com/t/ign_br/cover/s/stardew-va/stardew-valley_k54m.1200.jpg",
+        "category": "RPG",
+        "plataform": "PC"
+    },
+
+    {
+        "name": "Terraria",
+        "cover": "https://upload.wikimedia.org/wikipedia/en/1/1a/Terraria_Steam_artwork.jpg",
+        "category": "RPG",
+        "plataform": "PC"
+    },
+
+    {
+        "name": "Elden Ring",
+        "cover": "https://interfaceingame.com/wp-content/uploads/elden-ring/elden-ring-cover-375x500.jpg",
+        "category": "RPG",
+        "plataform": "PC"
+    },
+
+    {
+        "name": "Dark Souls 3",
+        "cover": "https://m.media-amazon.com/images/I/718rBrnOR5L._AC_UF1000,1000_QL80_.jpg",
+        "category": "RPG",
+        "plataform": "PS4"
+    },
+
+    {
+        "name": "The Elder Scrolls V: Skyrim",
+        "cover": "https://i.ebayimg.com/images/g/7y4AAOSwU15hE7mw/s-l500.jpg",
+        "category": "RPG",
+        "plataform": "Xbox"
+    },
+
+    {
+        "name": "Halo Infinite",
+        "cover": "https://external-preview.redd.it/_kXfGTTptY1ClhqZuH3dGenBup-sdMdJ51pWEGtc_1s.jpg?width=640&crop=smart&auto=webp&s=f62f35fe7118123f21214998c06649cc5860ba52",
+        "category": "FPS",
+        "plataform": "Xbox"
+    },
+
+    {
+        "name": "Crash TwinSanity",
+        "cover": "https://www.vgdb.com.br/gf/fotos/games/media_40991/crash-twinsanity-40991.jpg",
+        "category": "Adv",
+        "plataform": "Xbox"
+    },
+
+    {
+        "name": "Dark Souls 2",
+        "cover": "https://rootjogos.net/wp-content/uploads/2015/04/darksouls2ps4cover.jpg",
+        "category": "RPG",
+        "plataform": "PS4"
+    }
+]
