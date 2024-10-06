@@ -94,7 +94,7 @@
     height: max-content;
 
     position: absolute;
-    transform: translateX(19rem) translateY(38px);
+    transform: translateX(20.6rem) translateY(38px);
 
     opacity: 0;
     transition: opacity 300ms;

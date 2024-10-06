@@ -25,7 +25,7 @@ function Header() {
                 </div>
             </a>
             <nav className={styles.headerNav}>
-                <a href="#Todos">Novos jogos</a>
+                <a href="#Todos">Todos os jogos</a>
                 <a>Na lista</a>
                 <a id="dropdown_active" className={styles.dropdown_active}>Configurações</a>
                 <div id="dropdown_menu" className={styles.dropdown}>

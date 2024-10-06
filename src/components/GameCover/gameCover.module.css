@@ -28,3 +28,15 @@
 
     transition: 500ms;
 }
+
+.gameInfoAble {
+    opacity: 1;
+    display: flex;
+    transition: opacity 2s;
+}
+
+.gameInfoDisable {
+    opacity: 0;
+    display: none;
+    transition: opacity 2s;
+}
