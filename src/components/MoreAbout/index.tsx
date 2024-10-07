@@ -15,11 +15,11 @@ const MoreAbout: React.FC<MoreAboutProps> = ({ gameName, gameArt, gameDesc, game
         <div className={styles.blurBackground} id="aboutWindow">
             <div className={styles.moreAbout}>
                 <div className={styles.gameInfoL}>
-                    <img src={gameArt}/>
                     <h2> { gameName } </h2>
+                    <img src={gameArt}/>
                 </div>
                 <div className={styles.gameInfoR}>
-                    <h3>Sobre o jogo</h3>
+                    <h3>Sobre o jogo: </h3>
                     <p>
                         { gameDesc }
                     </p>

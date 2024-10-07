@@ -1,7 +1,9 @@
 import styles from "./gameListDisplay.module.css"
-import gameList from "../../json/games.json"
+
+import {fetchInfos, Game} from "../../hooks/fetchInfos"
+
 import GameCover from "../GameCover";
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useState } from "react";
 
 interface gameListProps {
     enableCategory?: ReactNode;
@@ -10,19 +12,41 @@ interface gameListProps {
 }
 
 const GameListDisplay: React.FC<gameListProps> = ({ enableCategory = false, plataform = false, category }) => {
+    const [games, setGames] = useState<Game[]>([]);
+    const [loading, setLoading] = useState<boolean>(true);
+
+    useEffect(() => {
+        const loadInfo = async () => {
+            setLoading(true);
+            try {
+                const gamesData = await fetchInfos();
+                setGames(gamesData);
+            } catch (error) {
+                console.log("Erro ao carregar os dados da dataBase", error);
+            } finally {
+                setLoading(false);
+            }
+        };
+        loadInfo();
+    }, []);
+    
 
     let filteredList = enableCategory 
-    ? gameList.filter((game) => game.category === category) 
-    : gameList
+    ? games.filter((game) => game.category === category) 
+    : games
 
     filteredList = enableCategory && plataform
-    ? gameList.filter((game) => game.plataform === category)
+    ? games.filter((game) => game.plataform === category)
     : filteredList;
 
+
+    if(loading) return <p>Carregando...</p>
+
+    console.log(filteredList)
     return (
         <div className={styles.gameListDisplay}>
             {
-                filteredList.map((game) => <GameCover name={game.name} cover={game.cover} key={game.name}/>)
+                filteredList.map((game) => <GameCover name={game.name} cover={game.coverId} desc={game.description} key={game.id}/>)
             }
         </div>
     )

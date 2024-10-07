@@ -4,24 +4,27 @@ import MoreAbout from "../MoreAbout";
 
 interface gameProps {
     name: ReactNode;
+    desc: ReactNode;
     cover?: ReactNode | any;
     verifyWindow?: boolean;
 }
 
-const GameCover: React.FC<gameProps> = ({name, cover}) => {
+const GameCover: React.FC<gameProps> = ({name, cover, desc}) => {
 
     let [info, checkInfo] = useState(false)
-    let element = document.getElementById("gameInfoWindow")
+    // let element = document.getElementById("gameInfoWindow")
 
     const clickToInfo = () => {
-        element?.classList.add(styles.gameInfoAble)
         checkInfo(true)
-        console.log(checkInfo)
+        
+        // element?.classList.replace(styles.gameInfoWindow, styles.gameInfoAble)
+        console.log('foi')
     }
 
     const clickToClose = () => {
-        element?.classList.add(styles.gameInfoDisable)
         checkInfo(false)
+
+        // element?.classList.add(styles.gameInfoDisable)
         console.log(checkInfo)
     }
    
@@ -29,8 +32,8 @@ const GameCover: React.FC<gameProps> = ({name, cover}) => {
         <>
             {
                 info && 
-                <div id="gameInfoWindow">
-                    <MoreAbout gameName={name} gameArt={cover} gameInfo={clickToClose}/> 
+                <div className={styles.gameInfoWindow} id="gameInfoWindow">
+                    <MoreAbout gameName={name} gameArt={cover} gameDesc={desc} gameInfo={clickToClose}/> 
                 </div>
             }
 
