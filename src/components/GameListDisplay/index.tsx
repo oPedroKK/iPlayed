@@ -46,7 +46,14 @@ const GameListDisplay: React.FC<gameListProps> = ({ enableCategory = false, plat
     return (
         <div className={styles.gameListDisplay}>
             {
-                filteredList.map((game) => <GameCover name={game.name} cover={game.coverId} desc={game.description} key={game.id}/>)
+                filteredList.map((game) => 
+                <GameCover 
+                
+                name={game.name} 
+                cover={game.coverId} 
+                desc={game.description} 
+                buyLink={game.shopLink}
+                key={game.id}/>)
             }
         </div>
     )

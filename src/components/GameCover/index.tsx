@@ -5,11 +5,12 @@ import MoreAbout from "../MoreAbout";
 interface gameProps {
     name: ReactNode;
     desc: ReactNode;
+    buyLink: ReactNode;
     cover?: ReactNode | any;
     verifyWindow?: boolean;
 }
 
-const GameCover: React.FC<gameProps> = ({name, cover, desc}) => {
+const GameCover: React.FC<gameProps> = ({name, cover, desc, buyLink}) => {
 
     let [info, checkInfo] = useState(false)
     // let element = document.getElementById("gameInfoWindow")
@@ -33,7 +34,7 @@ const GameCover: React.FC<gameProps> = ({name, cover, desc}) => {
             {
                 info && 
                 <div className={styles.gameInfoWindow} id="gameInfoWindow">
-                    <MoreAbout gameName={name} gameArt={cover} gameDesc={desc} gameInfo={clickToClose}/> 
+                    <MoreAbout gameName={name} gameArt={cover} gameDesc={desc} gameInfo={clickToClose} buyLink={buyLink}/> 
                 </div>
             }
 

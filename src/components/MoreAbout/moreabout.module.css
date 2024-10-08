@@ -1,39 +1,24 @@
 .blurBackground {
+    position: fixed;
+
     top: 0;
     left: 0;
     
-    position: fixed;
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-
-    background: #ffffffaf;
-
-    width: 100%;
-    height: 100%;
-
-    z-index: 1;
-}
-
-.blurBackgroundNone {
-    top: 0;
-    position: fixed;
-    display: none;
-
-    justify-content: center;
-    align-items: center;
-
-    background: #ffffffaf;
+    background-color: #ffffffd7;
+    backdrop-filter: blur(90px);
 
     width: 100vw;
     height: 100vh;
 
-    z-index: 1; 
+    z-index: 1;
 }
 
 .moreAbout {
     position: fixed;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     
     display: flex;
     color: #000000;
@@ -47,6 +32,8 @@
 
     box-shadow: 0px 0px 20px 5px #000000af;
     background-color: rgb(255, 255, 255);
+
+    z-index: 2;
 }
 
 .gameInfoL {
@@ -70,11 +57,34 @@
 
 .gameInfoR {
     display: flex;
+    align-items: center;
     text-align: center;
-    flex-direction: column;
-    justify-content: space-between;
 
-    margin-left: 200px;
+    margin-block: 60px;
+    gap: 40px;
+    
+    flex-direction: column;
+
+    margin-left: 30px;
+}
+
+.gameInfoR h3 {
+    font-size: 25px;
+}
+
+.gameInfoR p {
+    padding: 15px;
+    padding-block: 20px;
+
+    border-radius: 20px;
+
+    background-color: #f0f0f0;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.gameInfoR a {
+    font-size: 20px;
 }
 
 .gameInfoR button {
@@ -93,4 +103,9 @@
 
 .gameInfoR button:hover {
     background-color: #32c5ff;
+}
+
+.gameLink {
+    color: #32c5ff;
+    text-decoration: none;
 }

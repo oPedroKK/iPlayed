@@ -29,10 +29,6 @@
     transition: 500ms;
 }
 
-.gameInfoWindow {
-    opacity: 0;
-}
-
 .gameInfoAble {
     opacity: 1;
     display: flex;

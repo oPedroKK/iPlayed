@@ -7,6 +7,7 @@ export type Game = {
     plataform: string
     coverId: string
     description: string
+    shopLink: string
     id: string
 };
 
